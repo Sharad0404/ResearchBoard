@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  researchboard-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: researchboard_service
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      # Persistent named volume for SQLite database storage
+      - db-data:/app/data
+
+volumes:
+  db-data:
+    driver: local

@@ -1,0 +1,16 @@
+{
+  "name": "faculty-research-finder-increment1",
+  "version": "1.0.0",
+  "description": "Increment 1: Core authentication and opportunity-posting module for the Faculty Research and Project Collaboration Finder",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test_all_increments.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^13.0.3",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}

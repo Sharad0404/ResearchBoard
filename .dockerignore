@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+data/*.db
+data/*.db-journal
+.git
+.gitignore
+.github
+*.md
+test_all_increments.js
